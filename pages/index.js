@@ -34,12 +34,12 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Mood yourself!</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>food mood generator</h1>
+            <h1>food-mood generator</h1>
           </div>
           <div className="header-subtitle">
             <h2>food for every mood - tell us what it is!</h2>
