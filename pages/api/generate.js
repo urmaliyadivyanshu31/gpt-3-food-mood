@@ -6,7 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = "";
+const basePromptPrefix = `Hey I have below mood, suggest me some Indian food that I should eat in that mood `;
 
 const generateAction = async (req, res) => {
     // Running my first prompt
@@ -17,7 +17,7 @@ const generateAction = async (req, res) => {
         model: 'text-davinci-003',
         prompt: `${basePromptPrefix}${req.body.userInput}`,
         temperature: 0.7,
-        max_tokens: 250,
+        max_tokens: 100,
     });
 
     const basePromptOutput = baseCompletion.data.choices.pop();
