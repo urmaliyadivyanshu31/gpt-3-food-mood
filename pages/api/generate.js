@@ -6,7 +6,7 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-const basePromptPrefix = `Hey I have below mood, suggest me some Indian food that I should eat in that mood `;
+const basePromptPrefix = `Hey, suggest me some Indian food and write a summary that I should eat in mood when I am  `;
 
 const generateAction = async (req, res) => {
     // Running my first prompt
